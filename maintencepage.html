@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Maintenance Appointment - Sports Cars</title>
+    <link rel="stylesheet" href="maintence.css">
+    <link rel="stylesheet" href="appointment-style.css"> <!-- Additional CSS for appointment styling -->
+</head>
+<body>
+    <header>
+        <h1>Sports Cars</h1>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Schedule Your Maintenance Appointment</h1>
+            <p>Fill out the form below to book a maintenance appointment for your sports car.</p>
+        </div>
+    </section>
+
+    <section class="appointment-container">
+        <form class="appointment-form">
+            <h2>Appointment Details</h2>
+
+            <label for="car-make">Car Make:</label>
+            <input type="text" id="car-make" name="car-make" placeholder="e.g., Ferrari" required>
+
+            <label for="car-model">Car Model:</label>
+            <input type="text" id="car-model" name="car-model" placeholder="e.g., 488 GTB" required>
+
+            <label for="car-year">Year:</label>
+            <input type="number" id="car-year" name="car-year" placeholder="e.g., 2024" required>
+
+            <label for="service-type">Service Type:</label>
+            <select id="service-type" name="service-type" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="oil-change">Oil Change</option>
+                <option value="tire-rotation">Tire Rotation</option>
+                <option value="brake-inspection">Brake Inspection</option>
+                <option value="engine-tuning">Engine Tuning</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="preferred-date">Preferred Date:</label>
+            <input type="date" id="preferred-date" name="preferred-date" required>
+
+            <label for="preferred-time">Preferred Time:</label>
+            <input type="time" id="preferred-time" name="preferred-time" required>
+
+            <label for="additional-info">Additional Information:</label>
+            <textarea id="additional-info" name="additional-info" rows="4" placeholder="Any additional details or requests"></textarea>
+
+            <h2>Contact Information</h2>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="e.g., example@example.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g., (123) 456-7890" required>
+
+            <button type="submit">Schedule Appointment</button>
+        </form>
+    </section>
+
+    <footer>
+        <h1>All Rights Reserved to Sports Cars Website</h1>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Car Sales Form - Sports Cars</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="form-stylee.css"> 
+</head>
+<body>
+    <header>
+        <h1>Sports Cars</h1>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sports Car Sales Form</h1>
+            <p>Fill out the form below to provide details about the sports car you're interested in. We'll get back to you soon!</p>
+        </div>
+    </section>
+
+    <section class="form-container">
+        <form class="sales-form">
+            <h2>Car Information</h2>
+
+            <label for="car-make">Car Make:</label>
+            <input type="text" id="car-make" name="car-make" placeholder="e.g., Ferrari" required>
+
+            <label for="car-model">Car Model:</label>
+            <input type="text" id="car-model" name="car-model" placeholder="e.g., 488 GTB" required>
+
+            <label for="car-year">Year:</label>
+            <input type="number" id="car-year" name="car-year" placeholder="e.g., 2024" required>
+
+            <label for="car-price">Estimated Price:</label>
+            <input type="number" id="car-price" name="car-price" placeholder="e.g., 200000" required>
+
+            <label for="car-color">Preferred Color:</label>
+            <input type="text" id="car-color" name="car-color" placeholder="e.g., Red, Black">
+
+            <label for="car-mileage">Mileage (if used):</label>
+            <input type="text" id="car-mileage" name="car-mileage" placeholder="e.g., 5000 miles">
+
+            <label for="additional-info">Additional Information:</label>
+            <textarea id="additional-info" name="additional-info" rows="4" placeholder="Any additional details about the car"></textarea>
+
+            <h2>Contact Information</h2>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="e.g., example@example.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g., (123) 456-7890" required>
+
+            <h2>Review Your Information</h2>
+            <p>Make sure all the details are correct before submitting the form.</p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <h1>All Rights Reserved to Sports Cars Website</h1>
+    </footer>
+</body>
+</html>

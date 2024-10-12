@@ -1,0 +1,75 @@
+
+.form-container {
+    padding: 40px 20px;
+    background-color: #fff;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sales-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sales-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #111;
+    text-align: center;
+}
+
+.sales-form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    display: block;
+}
+
+.sales-form input, .sales-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.sales-form input:focus, .sales-form textarea:focus {
+    border-color: #da1010;
+    outline: none;
+}
+
+.sales-form button {
+    background-color: #da1010;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sales-form button:hover {
+    background-color: #b80c0c;
+}
+
+@media (max-width: 600px) {
+    .sales-form h2 {
+        font-size: 1.5em;
+    }
+    
+    .sales-form label {
+        font-size: 1em;
+    }
+    
+    .sales-form input, .sales-form textarea {
+        font-size: 0.9em;
+    }
+    
+    .sales-form button {
+        font-size: 1em;
+    }
+}
