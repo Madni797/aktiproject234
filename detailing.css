@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+header {
+    background-color: #da1010;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.content {
+    padding: 40px 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+.card-text {
+    padding: 15px;
+}
+.card-button-container {
+    position: absolute;
+    top: 50%;
+    left: -120px;
+    transform: translateY(-50%);
+    transition: left 0.3s ease;
+}
+
+.card-button-container .btn1 {
+    background-color: #da1010;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button-container .btn1:hover {
+    background-color: #a00a0a;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card:hover .card-button-container {
+    left: 15px;
+}
+
+footer {
+    background-color: #da1010;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h1 {
+    font-size: 1.2em;
+    margin: 0;
+}
+@media (max-width: 1200px) {
+    .card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em; 
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em; 
+    }
+
+    .hero-content p {
+        font-size: 1.2em; 
+    }
+
+    .card-button-container {
+        left: -80px;
+    }
+}
+

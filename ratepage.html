@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction - Sports Cars</title>
+    <link rel="stylesheet" href="rate.css">
+    <link rel="stylesheet" href="satisfaction-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Sports Cars</h1>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>We Value Your Feedback</h1>
+            <p>Let us know how satisfied you are with our services by filling out the form below.</p>
+        </div>
+    </section>
+
+    <section class="satisfaction-container">
+        <form class="satisfaction-form">
+            <h2>Rate Our Services</h2>
+
+            <label for="service-quality">Quality of Service:</label>
+            <select id="service-quality" name="service-quality" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <label for="customer-support">Customer Support:</label>
+            <select id="customer-support" name="customer-support" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <label for="timeliness">Timeliness of Service:</label>
+            <select id="timeliness" name="timeliness" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <label for="overall-experience">Overall Experience:</label>
+            <select id="overall-experience" name="overall-experience" required>
+                <option value="" disabled selected>Select a rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <label for="additional-comments">Additional Comments:</label>
+            <textarea id="additional-comments" name="additional-comments" rows="4" placeholder="Any additional feedback or suggestions"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <form class="satisfaction-form" action="submit_feedback.php" method="post">
+    </section>
+
+    <footer>
+        <h1>All Rights Reserved to Sports Cars Website</h1>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.snapchat.com" target="_blank" aria-label="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

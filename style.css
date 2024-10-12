@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #da1010;
+    background-color: #db0c0c;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -42,47 +41,78 @@ header h1 {
     margin: 0 auto;
 }
 
-.services {
-    padding: 40px 20px;
-    background-color: #fff;
-}
-
-a.service-item {
-    display: block;
-    text-decoration: none;
-    color: inherit;
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
     margin-bottom: 40px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-a.service-item:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.service-item img {
-    width: 100%;
-    height: auto;
-    max-width: 600px; 
+.about-card {
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(45% - 20px); 
+    max-width: 400px; 
+    text-align: center;
 }
 
-.service-item h2 {
-    font-size: 2em;
+.about-card h3 {
+    font-size: 1.5em;
     margin-bottom: 10px;
-    color: #111;
 }
 
-.service-item p {
-    font-size: 1.2em;
-    line-height: 1.6;
+.about-card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .about-card {
+        flex: 1 1 calc(100% - 20px); 
+    }
+}
+
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); 
+    max-width: 300px; 
+    text-align: center;
+    padding: 10px;
+}
+
+.team-member img {
+    width: 100%;
+    height: 50%;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+}
+
+.team-member p {
     color: #666;
+    margin-bottom: 10px;
 }
 
 footer {
-    background-color: #da1010;
+    background-color: #db0c0c;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -91,4 +121,51 @@ footer {
 footer h1 {
     font-size: 1.2em;
     margin: 0;
+}
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .about-content h2 {
+        font-size: 1.8em;
+    }
+
+    .about-content p {
+        font-size: 1em;
+    }
+
+    .team-member {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .about-content h2 {
+        font-size: 1.5em;
+    }
+
+    .about-content p {
+        font-size: 0.9em;
+    }
+
+    .team-member {
+        flex: 1 1 100%;
+    }
 }
